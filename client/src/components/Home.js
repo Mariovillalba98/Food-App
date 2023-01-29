@@ -270,7 +270,7 @@ export default function Home ({contador}) {
       {currentRecipes.length > 0? currentRecipes.map((x)=> {
         return(
 
-          <div>
+          <div key={x.id}>
             <Link className="nombre-testimonio"  onClick={(e)=>handlePage(e)} to = {"/home/"+x.id}>
         <Card name={x.name} image={x.image ? x.image : <img src="https://bitsofco.de/content/images/2018/12/broken-1.png" alt="Not found" ></img> } healthScore={x.healthScore} diets={x.diets} key={x.id} />
             </Link>

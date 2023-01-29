@@ -78,7 +78,7 @@ export default function CustomizedDialogs() {
         <DialogContent dividers>
         {Array.isArray(losDetalles[0].steps)? losDetalles[0].steps.map(el=>{
     return (
-        <Typography>{el}</Typography>)})
+        <Typography key={el}>{el}</Typography>)})
         :
     <Typography>{losDetalles[0].steps}</Typography>
 } 

@@ -6,6 +6,10 @@ import Detail from './components/Detail';
 import ErrorNotFound from './components/ErrorNotFound'
 import MainHome from './components/MainHome';
 import './App.css';
+import axios from 'axios';
+
+axios.defaults.baseURL="http://localhost:3001/"
+
 function App() {
   return (
     <BrowserRouter>
