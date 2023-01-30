@@ -8,7 +8,7 @@ import MainHome from './components/MainHome';
 import './App.css';
 import axios from 'axios';
 
-axios.defaults.baseURL="https://food-app-production-b394.up.railway.app"
+axios.defaults.baseURL="https://food-app-production-c0d6.up.railway.app"
 
 function App() {
   return (
